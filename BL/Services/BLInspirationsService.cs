@@ -71,6 +71,7 @@ public class BLInspirationsService : IBLInspiration
     {
         await _dalManager.Inspiration.Update(new Inspiration
         {
+            InspirationId= dto.InspirationId,
             Title = dto.Title,
             ImageUrl = dto.ImageUrl,
             Style = dto.Style,

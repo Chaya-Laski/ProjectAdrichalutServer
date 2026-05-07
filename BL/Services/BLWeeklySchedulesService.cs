@@ -78,7 +78,6 @@ namespace BL.Services
             });
         }
 
-
         public async Task DeleteAsync(int id)
         {
             await _dalManager.WeeklySchedule.Delete(id);

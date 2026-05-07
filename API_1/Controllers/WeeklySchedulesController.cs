@@ -34,7 +34,7 @@ public class WeeklySchedulesController : ControllerBase
         await bl.WeeklySchedule.UpdateAsync(dto);
         return Ok();
     }
-
+   
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {

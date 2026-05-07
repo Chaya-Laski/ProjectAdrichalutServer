@@ -36,7 +36,7 @@ namespace DAL.Services
         {
             Inspiration existing = await _context.Inspirations.FindAsync(item.InspirationId);
             if (existing == null)
-                throw new Exception("Course not found");
+                throw new Exception("Inspiration not found");
             existing.InspirationId = item.InspirationId;
             existing.ImageUrl = item.ImageUrl;
             existing.Style = item.Style;
