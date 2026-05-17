@@ -51,7 +51,7 @@ public partial class DbManager : DbContext
 
         modelBuilder.Entity<Inspiration>(entity =>
         {
-            entity.HasKey(e => e.InspirationId).HasName("PK__Inspirat__9FEF7B9026278170");
+            entity.HasKey(e => e.InspirationId).HasName("PK__tmp_ms_x__9FEF7B9070BCB1B8");
 
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
